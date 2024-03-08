@@ -6,7 +6,16 @@
     <groupId>com.amazon.sellingpartnerapi</groupId>
     <artifactId>sellingpartnerapi-aa-java</artifactId>
     <packaging>jar</packaging>
-    <version>2.0</version>
+    <version>2.0-a</version>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>EstoneReleases</name>
+            <url>http://192.168.3.191:8082/repository/EstoneReleases/</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>
@@ -15,7 +24,7 @@
                 <version>3.1</version>
                 <configuration>
                     <source>1.8</source>
-                    <target>1.8</target>
+                    <target>11</target>
                 </configuration>
             </plugin>
             <plugin>
