@@ -4098,10 +4098,25 @@
           "type": "string",
           "description": "The category of deemed reseller. This applies to selling partners that are not based in the EU and is used to help them meet the VAT Deemed Reseller tax laws in the EU and UK.",
           "enum": [
+            "GB_VOEC",
+            "NO_VOEC",
+            "CA_MPF",
             "IOSS",
             "UOSS"
           ],
           "x-docgen-enum-table-extension": [
+            {
+              "value": "GB_VOEC",
+              "description": ""
+            },
+            {
+              "value": "NO_VOEC",
+              "description": ""
+            },
+            {
+              "value": "CA_MPF",
+              "description": ""
+            },
             {
               "value": "IOSS",
               "description": "Import one stop shop. The item being purchased is not held in the EU for shipment."
